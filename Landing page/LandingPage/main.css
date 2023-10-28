@@ -1,0 +1,85 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.main p {
+    color: #696969;
+}
+.top {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.top h2 {
+    color: #696969;
+}
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Odstęp między kolumnami */
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: none;
+}
+.bottom {
+    text-align: center;
+}
+
+.schedule-button {
+    background-color: #696969;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.schedule-button:hover {
+    background-color: #2F2D2E; /* Zmiana koloru tła na hover */
+    transform: scale(1.10);
+}
+.schedule-button:active {
+    background-color: #2F2D2E;
+    transform: scale(1.10);
+}
+.icons {
+    padding-bottom: 35px;
+    color: black;
+    font-size: 40px;
+}
+/* Stylizacja głównego kontenera na telefonie */
+@media screen and (max-width: 768px) {
+    .main {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .top h2 {
+        font-size: 24px; /* Dostosuj rozmiar tekstu */
+    }
+}
+
+/* Stylizacja planów na telefonie */
+@media screen and (max-width: 768px) {
+    .plans {
+        flex-direction: column; /* Wyświetlaj plany w kolumnie na małym ekranie */
+        gap: 20px;
+    }
+    
+    .column {
+        text-align: left; /* Tekst w planach na lewo */
+    }
+    
+    .icons {
+        font-size: 30px; /* Dostosuj rozmiar ikon */
+    }
+}

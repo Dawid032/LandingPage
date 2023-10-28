@@ -1,0 +1,115 @@
+.background-image {
+    background-image: url(tlodostrony.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    display: flex; /* Ustawiamy kontener na flexbox */
+  }
+  
+  .left-column {
+    flex: 1; /* Pierwsza kolumna ma elastyczny rozmiar */
+    padding: 20px;
+    padding-bottom: 500px;
+    padding-top: 50px;
+    text-align: center; /* Wyśrodkowanie w poziomie */
+  }
+  
+  .right-column {
+    flex: 1; /* Druga kolumna ma elastyczny rozmiar */ /* Kolor tła drugiej kolumny */
+    padding: 0px;
+    padding-top: 50px;
+  }
+  
+  /* Dodatkowe style dla formularza */
+  form {
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    height: 350px;
+    margin: 0 auto;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+      color: white;
+      background-color: #696969;
+      width: 100%;
+      padding: 10px 5px 10px 0px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+  }
+  
+  textarea {
+      height: 100px;
+  }
+  
+  input[type="submit"] {
+    color: white;
+    background-color: #6E696A;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+  }
+  input[type="submit"]:hover {
+      background-color: #2F2D2E; /* Zmiana koloru tła na hover */
+      transform: scale(1.10);
+  }
+  input[type="submit"]:active {
+    background-color: #2F2D2E;
+    transform: scale(1.10);
+  }
+  .name-fields {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0px;
+  }
+  
+  .input-field {
+    flex: 1;
+    margin-right: 10px;
+  }
+  .container {
+    font-family: sans-serif;
+  }
+  .text1 {
+    margin-top: 30px;
+    font-size: 12px;
+    color: white;
+  }
+  .text2 {
+    color: #999999;
+    margin-top: 20px;
+  }
+  
+  .left-column p {
+    text-align: left; /* Ustawienie tekstu wewnątrz paragrafu na lewo */
+  }
+  
+  .left-column h1 {
+    display: flex;
+  font-size: 30px;
+  color: white;
+  }
+  .right-column h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #696969;
+  }
+
+  /* Dodaj background-image na telefonie */
+@media screen and (max-width: 768px) {
+  .background-image {
+      background-image: url(tlodostrony.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 300px; /* Dostosuj wysokość tła */
+  }
+}
